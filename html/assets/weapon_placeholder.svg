@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <radialGradient id="g" cx="20%" cy="10%" r="140%">
+      <stop offset="0%" stop-color="#00b8ff" stop-opacity="0.35"/>
+      <stop offset="55%" stop-color="#0b1016" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+    </radialGradient>
+    <linearGradient id="s" x1="0" x2="1">
+      <stop offset="0" stop-color="#000" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.10"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#g)"/>
+  <rect width="1200" height="600" fill="url(#s)"/>
+  <g fill="#ffffff" fill-opacity="0.88" font-family="Arial, Helvetica, sans-serif">
+    <text x="52" y="92" font-size="42" font-weight="800" letter-spacing="2">LS ARMORY</text>
+    <text x="56" y="126" font-size="16" font-weight="800" letter-spacing="7" fill="#00b8ff" fill-opacity="0.9">SUPPLY</text>
+    <text x="52" y="520" font-size="22" font-weight="700" fill-opacity="0.75">Weapon Preview</text>
+    <text x="52" y="552" font-size="14" fill-opacity="0.55">Replace with real weapon images if desired.</text>
+  </g>
+  <g opacity="0.20">
+    <path d="M320 360c190-110 420-120 640-40" fill="none" stroke="#00b8ff" stroke-width="10"/>
+    <path d="M300 410c210-120 470-130 700-35" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="6"/>
+  </g>
+</svg>

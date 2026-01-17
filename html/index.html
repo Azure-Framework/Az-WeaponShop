@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LS Armory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="hidden">
+    <div class="window">
+      <div class="titlebar">
+        <div class="macdots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+
+        <div class="domainPill" id="domainPill">www.lsarmory.net</div>
+
+        <button class="xBtn" id="closeBtn" aria-label="Close">✕</button>
+      </div>
+
+      <div class="hero">
+        <div class="brand">
+          <div class="brandTop" id="brandName">LS ARMORY</div>
+          <div class="brandSub" id="brandSub">SUPPLY</div>
+        </div>
+
+        <div class="rightTitle">
+          <div class="rtTop" id="rightTitle">WEAPON &amp; ATTACHMENT SERVICE</div>
+          <div class="rtSub" id="rightSub">Select an item — we’ll equip it safely.</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="tabs" id="tabs"></div>
+
+        <div class="searchSort">
+          <div class="search">
+            <span class="icon">⌕</span>
+            <input id="searchInput" placeholder="Search model / name" />
+          </div>
+
+          <div class="pill" id="readyPill">Ready</div>
+
+          <div class="sort">
+            <label>Sort:</label>
+            <select id="sortSelect">
+              <option value="name">Name</option>
+              <option value="priceAsc">Price (Low)</option>
+              <option value="priceDesc">Price (High)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+
+      <div class="footer">
+        <div class="hint" id="hintText">Select an item and purchase it.</div>
+        <button class="closeBottom" id="closeBottom">Close</button>
+      </div>
+
+      <!-- Details / attachments modal -->
+      <div class="modal hidden" id="modal">
+        <div class="modalCard">
+          <div class="modalHead">
+            <div>
+              <div class="modalTitle" id="modalTitle">Weapon</div>
+              <div class="modalDesc" id="modalDesc">Description</div>
+            </div>
+            <button class="modalX" id="modalX">✕</button>
+          </div>
+
+          <div class="modalBody">
+            <div class="modalPreview" id="modalPreview">
+              <div class="previewBrand">LS ARMORY</div>
+              <div class="previewSub">INSURANCE-GRADE SAFETY</div>
+            </div>
+
+            <div class="modalBuy">
+              <div class="priceRow">
+                <div class="label">Price</div>
+                <div class="value" id="modalPrice">$0</div>
+              </div>
+              <button class="buyBtn big" id="buyWeaponBtn">
+                Purchase
+                <span class="chev">›</span>
+              </button>
+
+              <div class="attHeader">Attachments</div>
+              <div class="attList" id="attList"></div>
+              <div class="smallNote">Attachments are validated per-weapon.</div>
+            </div>
+          </div>
+        </div>
+        <div class="modalBackdrop" id="modalBackdrop"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
